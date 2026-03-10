@@ -1,0 +1,20 @@
+1️⃣ Total Patients Count
+Business Question: Total kitne patients register hue?
+2️⃣ Most Common Disease
+Business Question: Kaunsi disease sabse zyada hai?
+3️⃣ Average Recovery Days by Disease
+Business Question: Har disease ka avg recovery time kya hai?
+4️⃣ Mortality Count
+Business Question: Total deaths kitni hui?
+5️⃣ Mortality Rate by Disease (🔥 important)
+Business Question: Kaunsi disease me death rate zyada hai?
+6️⃣ Patients by Gender
+Business Question: Gender distribution kya hai?
+7️⃣ Monthly Patient Trend
+Business Question: Har month me kitne cases aaye?
+8️⃣ Impact of Alcohol Use on Recovery
+Business Question: Alcohol users vs non-users recovery comparison
+9️⃣ Comorbidity vs Death Risk
+Business Question: Comorbidity wale patients me deaths zyada hain kya?
+🔟 Top 5 Longest Recovery Cases
+Business Question: Sabse zyada recovery time wale patients
