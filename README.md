@@ -1,147 +1,204 @@
-🏥 Indian-disease-data-analysis
-📊 Project Overview
+# Indian Disease Data Analysis
 
-This project analyzes healthcare data to understand disease patterns, patient demographics, recovery duration, and mortality trends in India. The goal is to use data analytics techniques to uncover insights that can help improve healthcare decision-making and patient outcomes.
+## Project Overview
+This project focuses on analyzing disease data from Indian patients to understand disease trends, recovery patterns, and mortality rates. The goal is to clean the dataset, perform exploratory data analysis, store the processed data in a MySQL database, and generate insights using SQL and visualization tools.
 
-📂 Dataset Summary
+---
 
-Rows: 10,000
+## Dataset Summary
 
-Columns: 14
+- Total Records: 10,000+
+- Key Features:
+  - Patient ID
+  - Age Group
+  - Gender
+  - Disease Name
+  - Symptoms
+  - Blood Group
+  - Comorbidity
+  - Alcohol Use
+  - Recovery Days
+  - Cause of Death
+  - Diagnosis Date
 
-Key Features
+---
 
-Patient Information: Patient ID, Age Group, Gender, Blood Group
+## Tools & Technologies
 
-Disease Details: Disease Name, Symptoms, Diagnosis Date
+- Python
+- Pandas
+- MySQL
+- SQL
+- Power BI
+- Matplotlib
 
-Health Factors: Comorbidity, Alcohol Use, BMI
+---
 
-Medical Outcomes: Recovery Days, Cause of Death
+## Data Cleaning & Preparation
 
-Missing Data
+The dataset required several preprocessing steps:
 
-Missing values were found in some columns such as Comorbidity, Alcohol Use, Cause of Death, and Recovery Days, which were handled during data cleaning.
+- Handled missing values in columns such as comorbidity, alcohol_use, and cause_of_death.
+- Converted diagnosis_date column into datetime format.
+- Standardized age group values.
+- Filled missing recovery days using median recovery time for each disease.
 
-🛠 Tools & Technologies
+---
 
-Python
+## Exploratory Data Analysis
 
-Pandas
+Using Python and SQL, several analytical questions were explored:
 
-MySQL
+- Total number of patients in the dataset
+- Most common diseases reported
+- Average recovery time per disease
+- Monthly disease trends
+- Gender distribution of patients
+- Impact of alcohol consumption on recovery
+- Mortality rate across diseases
 
-SQLAlchemy
+---
 
-Matplotlib
+## SQL Analysis
 
-Jupyter Notebook / Python Scripts
+The cleaned dataset was stored in a MySQL database and analyzed using SQL queries to extract meaningful insights.
 
-🧹 Data Cleaning & Preparation
+Examples:
 
-The dataset was cleaned and prepared using Python.
+- Disease frequency analysis
+- Mortality rate calculation
+- Recovery time comparison
+- Monthly patient trends
 
-Key steps included:
+---
 
-Handling missing values using median and default values
+## Key Insights
 
-Standardizing categorical values
+- Some diseases showed significantly longer recovery times.
+- Patients with comorbidities had higher mortality rates.
+- Certain months showed higher disease cases.
+- Alcohol consumption had an impact on recovery duration.
 
-Converting diagnosis_date to datetime format
+---
 
-Creating structured data suitable for SQL analysis
+## Dashboard (Power BI)
 
-Loading the cleaned dataset into a MySQL database
+An interactive dashboard was created in Power BI to visualize disease trends, recovery patterns, and patient demographics.
 
-🔍 Exploratory Data Analysis
+---
 
-Initial exploration was performed using Python to understand the dataset structure.
+## Project Structure
+# Indian Disease Data Analysis
 
-Steps performed:
+## Project Overview
+This project focuses on analyzing disease data from Indian patients to understand disease trends, recovery patterns, and mortality rates. The goal is to clean the dataset, perform exploratory data analysis, store the processed data in a MySQL database, and generate insights using SQL and visualization tools.
 
-Used data.info() and data.describe()
- 
-Checked missing values using isnull()
+---
 
-Verified unique values in categorical columns
+## Dataset Summary
 
-Examined disease distribution and recovery patterns
+- Total Records: 10,000+
+- Key Features:
+  - Patient ID
+  - Age Group
+  - Gender
+  - Disease Name
+  - Symptoms
+  - Blood Group
+  - Comorbidity
+  - Alcohol Use
+  - Recovery Days
+  - Cause of Death
+  - Diagnosis Date
 
-🗄 Database Integration
+---
 
-The cleaned dataset was loaded into MySQL using SQLAlchemy.
+## Tools & Technologies
 
-Steps included:
+- Python
+- Pandas
+- MySQL
+- SQL
+- Power BI
+- Matplotlib
 
-Creating a MySQL database
+---
 
-Establishing a Python–MySQL connection
+## Data Cleaning & Preparation
 
-Uploading the cleaned dataset to a database table
+The dataset required several preprocessing steps:
 
-Querying the data for further analysis
+- Handled missing values in columns such as comorbidity, alcohol_use, and cause_of_death.
+- Converted diagnosis_date column into datetime format.
+- Standardized age group values.
+- Filled missing recovery days using median recovery time for each disease.
 
-📈 Data Analysis using SQL
+---
 
-Key analytical questions explored:
+## Exploratory Data Analysis
 
-What is the total number of patients registered in the dataset?
+Using Python and SQL, several analytical questions were explored:
 
-Which disease has the highest number of reported cases?
+- Total number of patients in the dataset
+- Most common diseases reported
+- Average recovery time per disease
+- Monthly disease trends
+- Gender distribution of patients
+- Impact of alcohol consumption on recovery
+- Mortality rate across diseases
 
-What is the average recovery time for each disease?
+---
 
-What is the total number of recorded deaths?
+## SQL Analysis
 
-Which disease has the highest mortality rate?
+The cleaned dataset was stored in a MySQL database and analyzed using SQL queries to extract meaningful insights.
 
-What is the gender distribution of patients?
+Examples:
 
-How many cases were reported each month?
+- Disease frequency analysis
+- Mortality rate calculation
+- Recovery time comparison
+- Monthly patient trends
 
-Is there a difference in average recovery time between alcohol users and non-users?
+---
 
-Do patients with comorbidities have a higher risk of death compared to those without comorbidities?
+## Key Insights
 
-Which five patients had the longest recovery duration?
+- Some diseases showed significantly longer recovery times.
+- Patients with comorbidities had higher mortality rates.
+- Certain months showed higher disease cases.
+- Alcohol consumption had an impact on recovery duration.
 
-📊 Key Insights
+---
 
-Certain diseases showed significantly higher case counts compared to others.
+## Dashboard (Power BI)
 
-Recovery time varies depending on disease type and patient health conditions.
+An interactive dashboard was created in Power BI to visualize disease trends, recovery patterns, and patient demographics.
 
-Patients with comorbidities may have higher health risks.
+---
 
-Monthly trends help identify seasonal disease patterns.
-
-💡 Business Recommendations
-
-Focus healthcare resources on diseases with high case counts and mortality rates.
-
-Promote early diagnosis and preventive healthcare programs.
-
-Monitor high-risk patients with existing health conditions.
-
-Use healthcare data analytics for better policy and hospital management decisions.
-
-PATH:-
-Indian-Disease-Analysis
+## Project Structure
+indian-disease-data-analysis
 │
 ├── dataset
-│   └── indian_diseases_dataset.csv
-│
-├── python_script
-│   └── disease_analysis.py
-│
-├── sql_queries
-│   └── analysis_queries.sql
-│
+├── python-analysis
+├── sql-queries
+├── powerbi-dashboard
 └── README.md
+
 👨‍💻 Author
 
-Vivek Patil
+---
 
-📧 Email: vivekpatilavailable07@gmail.com
+## Author
 
-🌐 Portfolio: https://vivekpatil07-available.github.io
+**Vivek Patil**
+
+GitHub  
+https://github.com/VivekPatil07-available
+
+Portfolio  
+https://vivekpatil07-available.github.io/Portfolio07
+
+LinkedIn  
+https://linkedin.com/in/vivek-patil-b60a45298
